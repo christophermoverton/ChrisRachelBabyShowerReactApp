@@ -136,7 +136,7 @@ g#Clouds {
   -webkit-animation: NAME-YOUR-ANIMATION2 25s infinite; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION2 25s infinite; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION2 25s infinite; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION2 25s infinite, NAME-YOUR-ANIMATION6 10s forwards; /* IE 10+, Fx 29+ */ 
+  animation:         NAME-YOUR-ANIMATION2 25s infinite, NAME-YOUR-ANIMATION6 30s forwards; /* IE 10+, Fx 29+ */ 
   animation-delay: 0s, 17s;
 }
 
@@ -144,48 +144,66 @@ g#T1{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 17s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 17s, 17s;
 }
+
+
+/*
+g#T1 rect{
+  animation: typing 10s steps(60, end);
+  animation-delay: 20s;
+}
+<animate attributeName="startOffset" from="100%" to ="25.2441%" begin="17s" dur="10s" repeatCount="1"/>
+*/
+
 
 g#T2{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 22s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 22s,22s;
 }
 
 g#T3{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 27s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 27s,27s;
 }
 
 g#T4{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 32s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 32s,32s;
 }
 
 g#T5{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 37s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 37s,37s;
 }
 
 g#T6{
   -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
   -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
   -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
-  animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
-  animation-delay: 42s;
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 42s,42s;
+}
+
+g#T7{
+  -webkit-animation: NAME-YOUR-ANIMATION9 10s forwards; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION9 10s forwards; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION9 10s forwards; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION9 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+  animation-delay: 47s,47s;
 }
 
 @-webkit-keyframes NAME-YOUR-ANIMATION {
@@ -341,4 +359,17 @@ g#T6{
   0%   { opacity: 0;}
   
     100%   { opacity: 1;}
+}
+
+@keyframes example3 {
+  0%   {text-shadow: 1px 1px 5px rgba(255, 255, 255, 0), 1px 1px 5px rgba(219, 219, 219, 0), 0 0 5px rgba(100,100,100,0);}
+  25%  {text-shadow: 1px 1px 5px rgba(255, 255, 255, .5), 1px 1px 5px rgba(219, 219, 219, .5), 0 0 5px rgba(100,100,100,.5);}
+  50%  {text-shadow: 2px 2px 3px rgba(255, 255, 255, 1.0), 2px 2px 3px rgba(219, 219, 219, 1.0), 0 0 3px rgba(100,100,100,1.0);}
+  75%  {text-shadow: 1px 1px 2px rgba(255, 255, 255, .5), 1px 1px 2px rgba(219, 219, 219, .5), 0 0 5px rgba(100,100,100,.5);}
+  100% {text-shadow: 1px 1px 2px rgba(255, 255, 255, 0), 1px 1px 2px rgba(219, 219, 219, 0), 0 0 5px rgba(100,100,100,0);}
+}
+
+@keyframes typing {
+  0% { width: 0%; }
+  100% { width: 100%; }
 }
