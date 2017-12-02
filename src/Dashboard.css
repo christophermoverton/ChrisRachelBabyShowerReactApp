@@ -1,0 +1,589 @@
+@font-face {
+    font-family: "HelvLight";
+    src: url('HELN.TTF') format("truetype");
+  }
+
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+  
+#comp3{
+  
+  position: absolute;
+  z-index: 99999999;
+  display: inline;
+  
+}
+
+#comp2{ 
+  position: absolute;  
+  z-index: -1;
+  display: inline;
+  left: 0px;
+}
+
+text#T1a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+
+text#T2a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+  
+  text#T3a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+  
+  text#T4a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+  
+  text#T5a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+  
+  text#T6a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 10s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 10s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 10s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 10s forwards, example3  30s infinite; /* IE 10+, Fx 29+ */ 
+    animation-delay: 2s,20s;
+  }
+  
+  text#T7a{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;
+  }
+
+  text#T8{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 4s;
+  }
+
+  text#T9{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 6s;
+  }
+
+  text#T10{
+    font-family: "HelvLight";
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 8s;
+  }
+
+  text#T11{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#gr-simple);
+      stroke: #551F7A;
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+
+    opacity: 0;
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 6s infinite linear;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 0s;
+  }
+
+  text#T11a{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+      stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+  
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 0s;
+  }
+
+  text#T11b{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 0.25s;
+  }
+
+  text#T11c{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 0.5s;
+  }
+
+  text#T11d{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 0.75s;
+  }
+
+  text#T11e{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 1s;
+  }
+
+  text#T11f{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 1.25s;
+  }
+
+  text#T11g{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 1.5s;
+  }
+
+  text#T11h{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 1.75s;
+  }
+
+  text#T11i{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 2.0s;
+  }
+
+  text#T11j{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 2.25s;
+  }
+
+  text#T11k{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 2.5s;
+  }
+
+  text#T11l{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 2.75s;
+  }
+
+  text#T11m{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 3.0s;
+  }
+
+  text#T11n{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 3.25s;
+  }
+
+  text#T11o{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      transform-origin: center center;
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 3.5s;
+  }
+
+  text#T11p{
+    
+    font-family: "HelvLight";
+    
+    fill: url(#lgrad);
+    stroke: rgb(209, 51, 112);
+      stroke-width: 2;
+      font: 4.0em/3.0 Open Sans, Impact;
+      text-transform: uppercase;
+      
+
+    -webkit-animation: NAME-YOUR-ANIMATION9 2s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 2s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 2s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 2s forwards, stroke2 5s infinite ease-in-out;  /* IE 10+, Fx 29+ */ 
+    animation-delay: 10s, 3.75s;
+  }
+
+  g#PinkOverlay{
+    mix-blend-mode: color; 
+    -webkit-animation: NAME-YOUR-ANIMATION9 20s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION9 20s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION9 20s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION9 10s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 5s;
+  }
+
+  g#Suna{
+    -webkit-animation: NAME-YOUR-ANIMATION6 5s forwards; /* Safari 4+ */
+    -moz-animation:    NAME-YOUR-ANIMATION6 5s forwards; /* Fx 5+ */
+    -o-animation:      NAME-YOUR-ANIMATION6 5s forwards; /* Opera 12+ */
+    animation:         NAME-YOUR-ANIMATION6 5s forwards; /* IE 10+, Fx 29+ */ 
+    animation-delay: 0s;    
+  }
+
+  /* Colorize & animate pattern */
+.g-stars polygon {
+  stroke-width: 0;
+  -webkit-animation: stroke 2s infinite;
+  animation: stroke 2s infinite;
+}
+
+.g-stars polygon:nth-child(5n + 1) {
+  fill: #551F7A;
+  stroke: #551F7A;
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.g-stars polygon:nth-child(5n + 2) {
+  fill: #BA2799;
+  stroke: #BA2799;
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.g-stars polygon:nth-child(5n + 3) {
+  fill: #D9587A;
+  stroke: #D9587A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+
+.g-stars polygon:nth-child(5n + 4) {
+  fill: #FFDD00;
+  stroke: #FFDD00;
+  -webkit-animation-delay: -1.6s;
+  animation-delay: -1.6s;
+}
+
+.g-stars polygon:nth-child(5n + 5) {
+  fill: #FFF3A1;
+  stroke: #FFF3A1;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes rotat {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes rotat {
+  0%{
+    transform: rotate(0deg) ;
+  }
+  50%{
+    transform: rotate(0deg) ;
+  }
+  100% {
+    transform: rotate(0deg) ;
+  }
+}
+
+@-webkit-keyframes stroke2 {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke2 {
+  0%{
+    font-size: 4em;
+  }
+  2.0%{
+    font-size: 4.5em;
+  }
+  4.0% {
+    font-size: 4em;
+  }
+}
+
+
+/* Change stroke-width within animation */
+@-webkit-keyframes stroke {
+  50% {
+    stroke-width: 8;
+  }
+}
+@keyframes stroke {
+  50% {
+    stroke-width: 8;
+  }
+}
+
+
+
+
+  @-moz-keyframes NAME-YOUR-ANIMATION6 {
+    0%   {  opacity: 1;}
+  
+    100%   { opacity: 0;}
+  }
+  @-o-keyframes NAME-YOUR-ANIMATION6 {
+    0%   { opacity: 1;}
+    
+      100%   {  opacity: 0;}
+  }
+  @keyframes NAME-YOUR-ANIMATION6 {
+    0%   { opacity: 1;}
+    
+      100%   { opacity: 0;}
+  }
+
+  @-moz-keyframes NAME-YOUR-ANIMATION9 {
+    0%   {  opacity: 0;}
+  
+    100%   { opacity: 1;}
+  }
+  @-o-keyframes NAME-YOUR-ANIMATION9 {
+    0%   { opacity: 0;}
+    
+      100%   {  opacity: 1;}
+  }
+  @keyframes NAME-YOUR-ANIMATION9 {
+    0%   { opacity: 0;}
+    
+      100%   { opacity: 1;}
+  }
