@@ -4536,9 +4536,10 @@ export default function Backgroundart2component(props) {
       <text id="T1a" transform="matrix(1 0 0 1 432.6912 228.3278)" className="st373 st374">here is the deepest secret nobody knows</text>
       <text id="T8" transform="matrix(1 0 0 1 577.5583 228.2893)" className="st375 st373 st374">there’s a new wonder: </text>
       <text id="T10" transform="matrix(1 0 0 1 582.9592 338.2892)" className="st375 st373 st374">coming in April 2018</text>
-      <text id="T9" transform="matrix(1 0 0 1 603.4314 286.2893)" className="st375 st373 st374">(a new adventure)</text>
+      <text id="T9" transform="matrix(1 0 0 1 560.4314 286.2893)" className="st375 st373 st374">and a little bundle of fun</text>
+      <text id="T12" transform="matrix(1 0 0 1 611.7448 389.2893)" className="st375 st373 st374">baby girl Overton!</text>
       <symbol id="s-text">
-        <text id="T11" transform="matrix(1 0 0 1 611.7448 389.2893)" className="st375 st373 st374">baby girl Overton!</text>
+        
         <text id="T11a" transform="matrix(1 0 0 1 611.7448 389.2893)" classname="st375 st373 st374">b</text>
         <text id="T11b" transform="matrix(1 0 0 1 611.7448 389.2893)" classname="st375 st373 st374">a</text>
         <text id="T11c" transform="matrix(1 0 0 1 611.7448 389.2893)" classname="st375 st373 st374">b</text>
@@ -4569,11 +4570,7 @@ export default function Backgroundart2component(props) {
       <rect x="4.5" y={-69} className="st378" width="1369.7" height={1017} />
     </g>
     </g>
-    <use xlinkHref="#s-text" className="text" />
-    <use xlinkHref="#s-text" className="text" />
-    <use xlinkHref="#s-text" className="text" />
-    <use xlinkHref="#s-text" className="text" />
-    <use xlinkHref="#s-text" className="text" />
+
     </svg>
   );
 }

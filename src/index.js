@@ -144,7 +144,9 @@ function Square(props) {
 
 
 ReactDOM.render((
+  <div id="backgr">
   <BrowserRouter>
     <App />
   </BrowserRouter>
+  </div>
 ), document.getElementById('root'))

@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import Backgroundart2comp from './Backgroundart2component';
-import Backgroundart3comp from './Backgroundart3component';
+
 import './Dashboard.css';
 import * as d3 from 'd3';
 import * as d3scale from 'd3-scale';
@@ -13,13 +13,45 @@ import * as d3scale from 'd3-scale';
 
 class Dashboard extends Component {
   
+  checkDeviceSize(){
+    if (document.body.clientWidth/1366.0 < .4){
+      return true;
+    }
+    return false;
+  }
   
   componentDidMount() {
-    this.transition();
+
     this.loadConfetti();
+    this.transition();
+    
   }
+
+  componentWillUnmount(){
+    console.log("calling component unmount");
+    /*
+    d3.select("#T11a").transition();
+    d3.select("#T11b").transition();
+    d3.select("#T11c").transition();
+    d3.select("#T11d").transition();
+    d3.select("#T11e").transition();
+    d3.select("#T11f").transition();
+    d3.select("#T11g").transition();
+    d3.select("#T11h").transition();
+    d3.select("#T11i").transition();
+    d3.select("#T11j").transition();
+    d3.select("#T11k").transition();
+    d3.select("#T11l").transition();
+    d3.select("#T11m").transition();
+    d3.select("#T11n").transition();
+    d3.select("#T11o").transition();
+    d3.select("#T11p").transition();
+    */
+
+  }
+
   rotationloop(){
-    d3.select('#T11p').attr("transform", "rotate(10)");
+    d3.select('#T11p').attr("transform", "rotate(10)");//
   }
 
   transition() {
@@ -27,8 +59,8 @@ class Dashboard extends Component {
     oldText.push(d3.select('#T8').text());
     oldText.push(d3.select('#T9').text());
     oldText.push(d3.select('#T10').text());
-    oldText.push(d3.select('#T11').text());
-    d3.select('#T11').attr("transform", "translate(-15000,390)").style('font-size', '4em');
+    //oldText.push(d3.select('#T11').text());
+    /*
     d3.select('#T11a').attr("transform", "translate(-15000,390)").style('font-size', '4em');
     d3.select('#T11b').attr("transform", "translate(-15000,390)").style('font-size', '4em');
     d3.select('#T11c').attr("transform", "translate(-15000,390)").style('font-size', '4em');
@@ -45,13 +77,28 @@ class Dashboard extends Component {
     d3.select('#T11n').attr("transform", "translate(-15000,390)").style('font-size', '4em');
     d3.select('#T11o').attr("transform", "translate(-15000,390)").style('font-size', '4em');
     d3.select('#T11p').attr("transform", "translate(-15000,390)  rotate(10)").style('font-size', '4em');
-    this.rotationloop();
+    */
+    /*
+    if (!this.checkDeviceSize()){
+      d3.select('#T12').attr("transform", "translate(-15000,390)").style('font-size', '4em');
+    }
+    else{ */
+      d3.select('#T12').attr("transform", "translate(370,410)").style('font-size', '4em');
+    //}
+    
+    //this.rotationloop();
+    console.log("this old text: ");
     console.log(oldText);
     var elements = ["#T1","#T2","#T3","#T4","#T5"];
-    
+    var bsvg = document.getElementById("comp2");
+    bsvg.style.width="100%";
+    bsvg.style.height = "auto";
+    if (this.checkDeviceSize()){
+      bsvg.style.width="300%";
+    }
     d3.select("#T8").transition()
         .duration(2000).delay(3000).ease(d3.easeLinear).tween("text", function () {
-          
+            console.log(oldText);
             var newText = oldText[0];
             console.log(newText);
             console.log(0);
@@ -94,8 +141,9 @@ class Dashboard extends Component {
       
         //d3.select("#T11").transition()
         //.duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(380,420)");
+        if (!this.checkDeviceSize()){
         d3.select("#T11a").transition()
-        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(380,420)").on("end", repeat);
+        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(380,420)");//.on("end", repeat);
         d3.select("#T11b").transition()
         .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(423,420)").on("end", repeat2);
         d3.select("#T11c").transition()
@@ -111,7 +159,7 @@ class Dashboard extends Component {
         d3.select("#T11h").transition()
         .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(684,420)").on("end", repeat8);
         d3.select("#T11i").transition()
-        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(738,420)").on("end", repeat9);
+        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(745,420)").on("end", repeat9);
         d3.select("#T11j").transition()
         .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(789,420)").on("end", repeat10);
         d3.select("#T11k").transition()
@@ -121,20 +169,51 @@ class Dashboard extends Component {
         d3.select("#T11m").transition()
         .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(912,420)").on("end", repeat13);
         d3.select("#T11n").transition()
-        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(951,420)").on("end", repeat14);
+        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(946,420)").on("end", repeat14);
         d3.select("#T11o").transition()
-        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(1001,420)").on("end", repeat15);
+        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(990,420)").on("end", repeat15);
         d3.select("#T11p").transition()
-        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(1054,420)").on("end", repeat16);
+        .duration(1500).delay(9000).ease(d3.easeCubic).attr("transform", "translate(1040,420)").on("end", repeat16);
+        }
         //repeat();
+        var count1 = 0;
+        var count2 = 0;
+        var count3 = 0;
+        var count4 = 0;
+        var count5 = 0;
+        var count6 = 0;
+        var count7 = 0;
+        var count8 = 0;
+        var count9 = 0;
+        var count10 = 0;
+        var count11 = 0;
+        var count12 = 0;
+        var count13 = 0;
+        var count14 = 0;
+        var count15 = 0;
+        var count16 = 0;
+        var maxCount = 20;
 
         function repeat(){
+          if (count1 < maxCount){
+            count1 += 1;
+            console.log(count1);
+          }
+          else{
+            return;
+          }
           d3.select("#T11a").transition()
-          .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(0)").transition()
-          .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(-2)").transition()
-          .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(0)").on("end", repeat); 
+          .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(0)");//.transition()
+         // .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(-2)").transition()
+         // .duration(200).ease(d3.easeCubic).attr("transform", "translate(380,420) rotate(0)").on("end", repeat); 
         };
         function repeat2(){
+          if (count2 < maxCount){
+            count2 += 1;
+          }
+          else{
+            return;
+          }
               d3.select("#T11b").transition()
               .duration(210).ease(d3.easeCubic).attr("transform", "translate(423,420) rotate(-2)").transition()
               .duration(210).ease(d3.easeCubic).attr("transform", "translate(423,420) rotate(0)").transition()
@@ -142,6 +221,12 @@ class Dashboard extends Component {
         };
 
         function repeat3(){
+          if (count3 < maxCount){
+            count3 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11c").transition()
           .duration(330).ease(d3.easeCubic).attr("transform", "translate(469,420) rotate(-1)").transition()
           .duration(330).ease(d3.easeCubic).attr("transform", "translate(469,420) rotate(0)").transition()
@@ -149,6 +234,12 @@ class Dashboard extends Component {
         };
 
         function repeat4(){
+          if (count4 < maxCount){
+            count4 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11d").transition()
           .duration(350).ease(d3.easeCubic).attr("transform", "translate(512,420) rotate(-1)").transition()
           .duration(350).ease(d3.easeCubic).attr("transform", "translate(512,420) rotate(0)").transition()
@@ -156,6 +247,12 @@ class Dashboard extends Component {
         };
 
         function repeat5(){
+          if (count5 < maxCount){
+            count5 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11e").transition()
           .duration(370).ease(d3.easeCubic).attr("transform", "translate(571,420) rotate(-1)").transition()
           .duration(370).ease(d3.easeCubic).attr("transform", "translate(571,420) rotate(0)").transition()
@@ -163,6 +260,12 @@ class Dashboard extends Component {
         };
 
         function repeat6(){
+          if (count6 < maxCount){
+            count6 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11f").transition()
           .duration(330).ease(d3.easeCubic).attr("transform", "translate(619,420) rotate(-1)").transition()
           .duration(330).ease(d3.easeCubic).attr("transform", "translate(619,420) rotate(0)").transition()
@@ -170,6 +273,12 @@ class Dashboard extends Component {
         };
 
         function repeat7(){
+          if (count7 < maxCount){
+            count7 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11g").transition()
           .duration(325).ease(d3.easeCubic).attr("transform", "translate(642,420) rotate(-1)").transition()
           .duration(325).ease(d3.easeCubic).attr("transform", "translate(642,420) rotate(0)").transition()
@@ -177,6 +286,12 @@ class Dashboard extends Component {
         };
 
         function repeat8(){
+          if (count8 < maxCount){
+            count8 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11h").transition()
           .duration(335).ease(d3.easeCubic).attr("transform", "translate(684,420) rotate(-1)").transition()
           .duration(335).ease(d3.easeCubic).attr("transform", "translate(684,420) rotate(0)").transition()
@@ -184,13 +299,25 @@ class Dashboard extends Component {
         };
 
         function repeat9(){
+          if (count9 < maxCount){
+            count9 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11i").transition()
-          .duration(315).ease(d3.easeCubic).attr("transform", "translate(738,420) rotate(-1)").transition()
-          .duration(315).ease(d3.easeCubic).attr("transform", "translate(738,420) rotate(0)").transition()
-          .duration(315).ease(d3.easeCubic).attr("transform", "translate(738,420) rotate(1)").on("end", repeat9); 
+          .duration(315).ease(d3.easeCubic).attr("transform", "translate(745,420) rotate(-1)").transition()
+          .duration(315).ease(d3.easeCubic).attr("transform", "translate(745,420) rotate(0)").transition()
+          .duration(315).ease(d3.easeCubic).attr("transform", "translate(745,420) rotate(1)").on("end", repeat9); 
         };
 
         function repeat10(){
+          if (count10 < maxCount){
+            count10 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11j").transition()
           .duration(345).ease(d3.easeCubic).attr("transform", "translate(789,420) rotate(-1)").transition()
           .duration(345).ease(d3.easeCubic).attr("transform", "translate(789,420) rotate(0)").transition()
@@ -198,6 +325,12 @@ class Dashboard extends Component {
         };
 
         function repeat11(){
+          if (count11 < maxCount){
+            count11 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11k").transition()
           .duration(342).ease(d3.easeCubic).attr("transform", "translate(833,420) rotate(-1)").transition()
           .duration(342).ease(d3.easeCubic).attr("transform", "translate(833,420) rotate(0)").transition()
@@ -205,6 +338,12 @@ class Dashboard extends Component {
         };
 
         function repeat12(){
+          if (count12 < maxCount){
+            count12 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11l").transition()
           .duration(352).ease(d3.easeCubic).attr("transform", "translate(869,420) rotate(-1)").transition()
           .duration(352).ease(d3.easeCubic).attr("transform", "translate(869,420) rotate(0)").transition()
@@ -212,6 +351,12 @@ class Dashboard extends Component {
         };
 
         function repeat13(){
+          if (count13 < maxCount){
+            count13 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11m").transition()
           .duration(350).ease(d3.easeCubic).attr("transform", "translate(912,420) rotate(-1)").transition()
           .duration(350).ease(d3.easeCubic).attr("transform", "translate(912,420) rotate(0)").transition()
@@ -219,24 +364,42 @@ class Dashboard extends Component {
         };
 
         function repeat14(){
+          if (count14 < maxCount){
+            count14 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11n").transition()
-          .duration(332).ease(d3.easeCubic).attr("transform", "translate(951,420) rotate(-1)").transition()
-          .duration(332).ease(d3.easeCubic).attr("transform", "translate(951,420) rotate(0)").transition()
-          .duration(332).ease(d3.easeCubic).attr("transform", "translate(951,420) rotate(1)").on("end", repeat14); 
+          .duration(332).ease(d3.easeCubic).attr("transform", "translate(946,420) rotate(-1)").transition()
+          .duration(332).ease(d3.easeCubic).attr("transform", "translate(946,420) rotate(0)").transition()
+          .duration(332).ease(d3.easeCubic).attr("transform", "translate(946,420) rotate(1)").on("end", repeat14); 
         };
 
         function repeat15(){
+          if (count15 < maxCount){
+            count15 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11o").transition()
-          .duration(343).ease(d3.easeCubic).attr("transform", "translate(1001,420) rotate(-1)").transition()
-          .duration(343).ease(d3.easeCubic).attr("transform", "translate(1001,420) rotate(0)").transition()
-          .duration(343).ease(d3.easeCubic).attr("transform", "translate(1001,420) rotate(1)").on("end", repeat15); 
+          .duration(343).ease(d3.easeCubic).attr("transform", "translate(990,420) rotate(-1)").transition()
+          .duration(343).ease(d3.easeCubic).attr("transform", "translate(990,420) rotate(0)").transition()
+          .duration(343).ease(d3.easeCubic).attr("transform", "translate(990,420) rotate(1)").on("end", repeat15); 
         };
 
         function repeat16(){
+          if (count16 < maxCount){
+            count16 += 1;
+          }
+          else{
+            return;
+          }
           d3.select("#T11p").transition()
-          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1054,420) rotate(-1)").transition()
-          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1054,420) rotate(0)").transition()
-          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1054,420) rotate(1)").on("end", repeat16); 
+          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1040,420) rotate(-1)").transition()
+          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1040,420) rotate(0)").transition()
+          .duration(350).ease(d3.easeCubic).attr("transform", "translate(1040,420) rotate(1)").on("end", repeat16); 
         };
 
         var width = 1200;
@@ -251,7 +414,7 @@ class Dashboard extends Component {
           .domain([0, width/2])
           .range(['#d73027', '#1a9850'])
           .interpolate(d3.interpolateHcl); 
-        console.log(color(Math.floor(233.3)));
+        //console.log(color(Math.floor(233.3)));
         //var color = d3.scaleOrdinal.range(['#f7a91e', '#d9f71e']);
         var rand = d3.randomNormal(width/2,100);
         var randomX = function(b){ return d3.randomNormal(b, 80)()};
@@ -269,11 +432,24 @@ class Dashboard extends Component {
                     .append("circle");
     var circles2 = svg2.selectAll("circle").data(data2).enter()
                     .append("circle");                
-
+    var fcount = 0;
+    var fcount2 = 0;
+    var maxFCount = 10;
+    if (!this.checkDeviceSize()){
+    var myVar1 = setInterval(function(){fireworks()},4000);
+    var myVar2 = setInterval(function(){fireworks2()},3500);
+    }      
     function fireworks(){
+      if (fcount < maxFCount){
+        fcount += 1;
+
+      }
+      else{
+        clearInterval(myVar1);
+      }
         var base = rand();
 
-        console.log(base);
+       // console.log(base);
         data = d3.range(100).map(function() { return {x: randomX(base), y: randomY()}; });
        
        //d3.select("circle").attr("fill-opacity",1).transition().ease(d3.easeCubic).duration(1000).attr("cy",height/2);
@@ -305,9 +481,15 @@ class Dashboard extends Component {
     function fireworks2(){
       //var base = rand();
       var base2 = rand();
-      console.log("fireworks2");
-      console.log(base2);
-      
+      //console.log("fireworks2");
+      //console.log(base2);
+      if (fcount2 < maxFCount){
+        fcount2 += 1;
+      }
+      else{
+        console.log("clearing fireworks2");
+        clearInterval(myVar2);
+      }
       //data = d3.range(100).map(function() { return {x: randomX(base), y: randomY()}; });
       data2 = d3.range(100).map(function() { return {x: randomX(base2), y: randomY()}; });
      //d3.select("circle").attr("fill-opacity",1).transition().ease(d3.easeCubic).duration(1000).attr("cy",height/2);
@@ -318,7 +500,7 @@ class Dashboard extends Component {
           .transition().delay(1200)
               .ease(d3.easeCubic)
               .duration(300)
-              .attr("cx", function(d){console.log("hit circ2!"); return d.x; })
+              .attr("cx", function(d){ return d.x; })
               .attr("cy", function(d){ return d.y; })
               .attr("r", 5)
               .attr("fill", function(d){ return color(Math.floor(d.x)); }).attr("fill-opacity",1)
@@ -335,16 +517,21 @@ class Dashboard extends Component {
               .attr("r", 0);
 
   }
-    setInterval(fireworks,4000);
-    setTimeout(setInterval(fireworks2,3500),2500);      
+
     //  <Backgroundart2comp/>
   }  
 
   loadConfetti(){
-    var retina = window.devicePixelRatio,
-    
+    console.log("load Confetti called!");
+    var retina = (document.body.clientWidth)/window.screen.width;//(document.body.clientWidth+129.0)/1366.0;//window.devicePixelRatio,
+    //if (this.checkDeviceSize()){
+    //  retina *= 2.0;
+    //}
+    console.log("client width:");
+    console.log(document.body.clientWidth);
+    console.log(window.screen.width);
         // Math shorthands
-        PI = Math.PI,
+        var PI = Math.PI,
         sqrt = Math.sqrt,
         round = Math.round,
         random = Math.random,
@@ -355,7 +542,8 @@ class Dashboard extends Component {
         rAF = window.requestAnimationFrame,
         cAF = window.cancelAnimationFrame || window.cancelRequestAnimationFrame,
         _now = Date.now || function () {return new Date().getTime();};
-    
+    var tcount = 0;
+    var maxTCount = 1200;
     // Local WindowAnimationTiming interface polyfill
     (function (w) {
       /**
@@ -386,14 +574,14 @@ class Dashboard extends Component {
       };
     }(window));
     
-    document.addEventListener("DOMContentLoaded", function() {
+    //document.addEventListener("DOMContentLoaded", function() {
       var speed = 50,
           duration = (1.0 / speed),
           confettiRibbonCount = 11,
           ribbonPaperCount = 30,
           ribbonPaperDist = 8.0,
           ribbonPaperThick = 8.0,
-          confettiPaperCount = 95,
+          confettiPaperCount = 35,
           DEG_TO_RAD = PI / 180,
           RAD_TO_DEG = 180 / PI,
           colors = [
@@ -683,11 +871,17 @@ class Dashboard extends Component {
         var canvas = document.getElementById(id);
         var canvasParent = canvas.parentNode;
         console.log("C width: ");
-        var canvasWidth = 600;//canvasParent.width;
+        var canvasWidth = 1366.0;//document.body.clientWidth;//canvasParent.width;
         console.log(canvasWidth);
-        var canvasHeight = 600;//canvasParent.height;
-        canvas.width = canvasWidth * retina;
-        canvas.height = canvasHeight * retina;
+        var canvasHeight = window.innerHeight;//document.body.clientHeight;//canvasParent.height;
+        console.log(canvasHeight);
+        canvas.width = document.body.clientWidth;//* retina;
+        
+        if (document.body.clientWidth/1366.0 < .4){
+          canvas.width = 2.0*document.body.clientWidth;
+        }
+        
+        canvas.height = canvasHeight;// * retina;
         var context = canvas.getContext('2d');
         var interval = null;
         var confettiRibbons = new Array();
@@ -701,25 +895,34 @@ class Dashboard extends Component {
           confettiPapers[i] = new ConfettiPaper(random() * canvasWidth, random() * canvasHeight);
         }
         this.resize = function() {
-          canvasWidth = canvasParent.width;
+          canvasWidth = 1366.0;
           console.log("C Width: ");
           console.log(canvasWidth);
           
-          canvasHeight = canvasParent.height;
-          canvas.width = canvasWidth * retina;
-          canvas.height = canvasHeight * retina;
+          canvasHeight = document.body.clientHeight;
+          //canvas.width = canvasWidth * retina;
+          //canvas.height = canvasHeight * retina;
           ConfettiPaper.bounds = new Vector2(canvasWidth, canvasHeight);
           ConfettiRibbon.bounds = new Vector2(canvasWidth, canvasHeight);
         }
         this.start = function() {
+          console.log("hitting start of confetti");
           this.stop()
           var context = this;
           this.update();
         }
+        
         this.stop = function() {
           cAF(this.interval);
         }
         this.update = function() {
+          if (tcount < maxTCount){
+            tcount += 1;
+
+          }
+          else{
+            return;
+          }
           var i = 0;
           context.clearRect(0, 0, canvas.width, canvas.height);
           for (i = 0; i < confettiPaperCount; i++) {
@@ -740,11 +943,13 @@ class Dashboard extends Component {
       window.addEventListener('resize', function(event){
         confetti.resize();
       });
-    });
+    //});
 }
   
 
   render() {
+    //<canvas id="confetti"/>
+    
     return (
         <div>
           

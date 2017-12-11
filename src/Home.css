@@ -21,6 +21,7 @@ s{
     animation:         NAME-YOUR-ANIMATION 5s infinite; /* IE 10+, Fx 29+ */
   }
   
+ /* 
   svg {
     width: 100%;
     height: 100%;
@@ -32,6 +33,7 @@ s{
     height: 100%;
   
   }
+  */
   
   g#Mountain1 {
     transform-origin: center center;
@@ -123,6 +125,7 @@ s{
   }
   
   g#Skyback{
+    transform-origin: center center;
     position: fixed;
     mask-type: overlay; /* white = transparent, grays = semi-transparent, black = opaque */
     mask-type: alpha; 

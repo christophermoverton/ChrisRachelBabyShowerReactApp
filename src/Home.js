@@ -6,11 +6,27 @@ import * as d3 from 'd3';
 import './Home.css';
 
 class Game extends React.Component {
+
+  checkDeviceSize(){
+    if (document.body.clientWidth/1366.0 < .4){
+      return true;
+    }
+    return false;
+  }
+
     componentDidMount() {
       this.transition();
     }
 
     transition() {
+      var bsvg = document.getElementById("comp4");
+      bsvg.style.width="100%";
+      bsvg.style.height = "auto";
+      if (this.checkDeviceSize()){
+        bsvg.style.width="300%";
+        bsvg.style.height="200%";
+        //d3.select('#Skyback').attr("transform", "rotate(90)");
+      }
       var oldText = [];
       oldText.push(d3.select('#T1').text());
       oldText.push(d3.select('#T2').text());
@@ -120,10 +136,10 @@ class Game extends React.Component {
  
     render() {
       return (
-        <div className="game">
+      
 
-
-        <Backgroundartcomp/>
+        <div>
+        <Backgroundartcomp id="comp4"/>
         </div>
         
       );
@@ -134,9 +150,9 @@ class Home extends Component {
   render() {
     return (
        
-          
+          <div>
           <Game/>
-        
+        </div>
     );
   }
 }
